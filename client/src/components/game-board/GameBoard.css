@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.game-board {
+    font-size: 24px;
+    background-color: #151B23;
+    color: white;
+}
+
+.question-board {
+    background-color: #283341;
+}
+
+.question-text {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+}
