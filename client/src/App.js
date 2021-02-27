@@ -3,7 +3,9 @@ import GameBoard from './components/game-board/GameBoard.js';
 
 function App() {
   return (
-    <GameBoard />
+    <div className="wrap">
+      <GameBoard />
+    </div>
   )
 }
 
