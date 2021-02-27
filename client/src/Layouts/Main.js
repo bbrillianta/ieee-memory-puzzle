@@ -1,10 +1,10 @@
 import React from 'react';
 import './Main.css';
 
-import HowTo from '../Components/HowTo';
-import EventList from '../Components/EventList';
-
+import EventList from '../Components/event_list/EventList';
 import GameBoard from '../Components/game-board/GameBoard';
+
+import EndBlock from '../Components/end_game/EndBlock';
 
 const Main = () =>{
     return(<>
