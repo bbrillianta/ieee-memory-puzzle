@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 app.post('/store', async (req, res) => {
     const { name, date, desc } = req.body;
-    console.log(name, date, desc);
+    
     const doc = await new Date({
         name,
         date,
