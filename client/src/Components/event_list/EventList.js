@@ -17,7 +17,7 @@ const EventList = (props) =>{
     return(<>
     <div className="cont-event">
         <div className="event">
-            <h4 className="d-flex justify-content-center">Important dates on: {props.date}</h4>
+            <h4 className="d-flex justify-content-center">Important events on: {props.date}</h4>
             <List event="desc event" url="url event" />
             <List event="desc event" url="url event" />
             <List event="desc event" url="url event" />
