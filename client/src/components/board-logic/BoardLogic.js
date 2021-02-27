@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
 
 const BoardLogic = () => {
-    const [questions, setQuestions] = useState([]);
+  const [questions, setQuestions] = useState([]);
   const [currInfo, setCurrInfo] = useState();
-
-  // useEffect(() => {
-  // }, [setQuestions]);
 
   const randQuestion = (q) => Math.floor(Math.random() * q.length);
 

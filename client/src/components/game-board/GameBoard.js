@@ -8,9 +8,9 @@ const GameBoard = () => {
                 <div className="col-md-6">
                     <p className="ml-5">
                         Life: 
-                        <img className="ml-2" src="./Vector.png"></img>
-                        <img className="ml-1" src="./Vector.png"></img>
-                        <img className="ml-1"   src="./Vector.png"></img>
+                        <img className="ml-2" src="./heart.png"></img>
+                        <img className="ml-1" src="./heart.png"></img>
+                        <img className="ml-1"  src="./heart.png"></img>
                     </p> 
                 </div>
                 <div className="col-md-6 text-right">
