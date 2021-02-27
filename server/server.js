@@ -18,8 +18,8 @@ const { Schema } = mongoose;
 const dateSchema = new Schema({
     date: String,
     event: [{
-        desc: String,
-        url: String
+        url: String,
+        desc: String
     }]
 });
 
@@ -31,12 +31,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/store', async (req, res) => {
-    const { date, desc, url } = req.body;
-    const doc = await new Date({
-        date,
-        desc,
-        url
-    });
+    const { date,event } = req.body;
+    const doc = new Date({date, event})
+    
 
     const storedDoc = await doc.save();
 
