@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const dotenv = require('dotenv').config();
 const cors = require('cors');
+const { ObjectID } = require('mongodb');
 
 //Basic configuration
 const app = express();
@@ -17,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const { Schema } = mongoose;
 const dateSchema = new Schema({
     date: String,
-    event: [{
+    event: [{ 
         url: String,
         desc: String
     }]
@@ -33,15 +34,20 @@ app.get('/', (req, res) => {
 app.post('/store', async (req, res) => {
     const { date,event } = req.body;
     const doc = new Date({date, event})
-    
 
     const storedDoc = await doc.save();
 
     res.json({ success: true, storedDoc });
 });
 
-app.get('/dates', async(req, res) => {
-    const foundDocs = await Date.aggregate([{ $sample: { size: 20 } }]);
+app.get('/dates', async (req, res) => {
+    const foundDocs = await Date.aggregate([{ $sample: { size: 25 } }]);
+
+    res.json({ success: true, foundDocs });
+});
+
+app.get('/all', async (req, res) => {
+    const foundDocs = await Date.find({});
 
     res.json({ success: true, foundDocs });
 });

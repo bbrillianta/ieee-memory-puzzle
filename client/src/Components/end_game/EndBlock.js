@@ -19,7 +19,7 @@ let complement = [
 
 let said = complement[Math.floor(Math.random() * 10)];
 
-const EndBlock = () => {
+const EndBlock = (props) => {
     return (
         <div className="cont">
         <div className="game-board container">
@@ -36,7 +36,7 @@ const EndBlock = () => {
                 </div>
             </div>
             <div className="row question-board py-4">
-                <div className="col text-center question-text"> <strong>69</strong> <br />{said}</div>
+                <div className="col text-center question-text"> <strong>{ props.score }</strong> <br />{said}</div>
             </div>            
             <div className="row py-5 pb-4">
                 <div className="col d-flex justify-content-center">
