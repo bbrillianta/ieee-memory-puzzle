@@ -22,7 +22,7 @@ const BoardLogic = () => {
   return (
     <div>
       <button onClick= { checkAnswer }>Found</button>
-      <button onClick= { checkAnswer }>News</button>
+      <button onClick= { checkAnswer }>New</button>
       <p>{ currInfo?.desc }</p>
       <p>{ currInfo?.url }</p>
     </div>
