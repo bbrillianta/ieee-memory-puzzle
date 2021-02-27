@@ -1,4 +1,7 @@
 .btn-app {
     background-color: #2651A6!important;
     color: white!important;
+    font-size: 24px!important;
+    border-radius: 17px!important;
+    padding: 13px 30px!important;
 }
