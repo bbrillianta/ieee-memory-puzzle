@@ -41,7 +41,7 @@ app.post('/store', async (req, res) => {
 });
 
 app.get('/dates', async (req, res) => {
-    const foundDocs = await Date.aggregate([{ $sample: { size: 20 } }]);
+    const foundDocs = await Date.aggregate([{ $sample: { size: 25 } }]);
 
     res.json({ success: true, foundDocs });
 });

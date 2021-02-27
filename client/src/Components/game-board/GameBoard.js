@@ -3,8 +3,6 @@ import Button from '../button/Button.js';
 import { useEffect, useState } from 'react';
 
 const GameBoard = (props) => {
-    const [score, setScore] = useState(0);
-
     return (
         <div className="cont">
         <div className="game-board container">
@@ -12,14 +10,23 @@ const GameBoard = (props) => {
                 <div className="col-md-6">
                     <p className="ml-5">
                         Life: 
-                        <img className="ml-2" src="./heart.png" alt="heart"></img>
-                        <img className="ml-1" src="./heart.png" alt="heart"></img>
-                        <img className="ml-1"  src="./heart.png" alt="heart"></img>
+                        { props.lives >= 1 
+                            ? <img className="ml-2" src="./heart.png" alt="heart"></img> 
+                            : <img className="ml-2" src="./heart-gone.png" alt="heart"></img>
+                        }
+                        { props.lives >= 2 
+                           ? <img className="ml-1" src="./heart.png" alt="heart"></img> 
+                           : <img className="ml-1" src="./heart-gone.png" alt="heart"></img> 
+                        }
+                        { props.lives == 3 
+                            ? <img className="ml-1"  src="./heart.png" alt="heart"></img> 
+                            : <img className="ml-1"  src="./heart-gone.png" alt="heart"></img> 
+                        }
                     </p> 
                 </div>
                 <div className="col-md-6 text-right">
                     <p className="mr-5">
-                        Points: { score }
+                        Points: { props.score }
                     </p>
                 </div>
             </div>

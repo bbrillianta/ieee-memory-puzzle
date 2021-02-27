@@ -21,10 +21,6 @@ const EventList = (props) =>{
                             {props.prevQuestion?.event[0].desc} &nbsp; 
                             <a href={props.prevQuestion?.event[0].url} target="_blank"><BsFillInfoCircleFill /></a>
                         </p>
-                        
-                    // props.currQuestion.event.map((items) => {
-                    //     return <p><BsFillCaretRightFill />   {items.desc} &nbsp; <a href={items.url}><BsFillInfoCircleFill /></a></p>
-                    // }) 
                     }
                     <p className="text-right">Click the  <BsFillInfoCircleFill /> icon to read more.</p>
                     <br />
