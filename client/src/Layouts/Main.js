@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
-<<<<<<< HEAD
-import HowTo from '../Components/HowTo';
-import EventList from '../Components/EventList';
-
-=======
 
 import EventList from '../Components/event_list/EventList';
->>>>>>> e5cee8fd3b5a9f6833a30b47092df3e6a6f88693
 import GameBoard from '../Components/game-board/GameBoard';
 
 import EndBlock from '../Components/end_game/EndBlock';

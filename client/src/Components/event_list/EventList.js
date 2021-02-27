@@ -7,20 +7,6 @@ import { BsFillInfoCircleFill } from "react-icons/bs";
 
 import './EventList.css';
 
-<<<<<<< HEAD:client/src/Components/EventList.js
-const list = (props) =>{
-   
-    // return(<>
-    //    <p><BsFillCaretRightFill />   {props.event} &nbsp; <a href={props.url}><BsFillInfoCircleFill /></a></p>
-    // </>);
-=======
-const List = (props) =>{
-    return(<>
-       <p><BsXDiamondFill /> &nbsp;   {props.event} &nbsp; <a href={props.url}><BsFillInfoCircleFill /></a></p>
-    </>);
->>>>>>> e5cee8fd3b5a9f6833a30b47092df3e6a6f88693:client/src/Components/event_list/EventList.js
-}
-
 const EventList = (props) =>{
     const [events, setEvents] = useState();
 
@@ -31,9 +17,9 @@ const EventList = (props) =>{
                 <div>
                     <h4 className="d-flex justify-content-center">Important event on: {props.prevQuestion?.date}</h4>
                     { 
-                        <p><BsFillCaretRightFill /> 
+                        <p><BsXDiamondFill /> &nbsp;
                             {props.prevQuestion?.event[0].desc} &nbsp; 
-                            <a href={props.prevQuestion?.event[0].url}><BsFillInfoCircleFill /></a>
+                            <a href={props.prevQuestion?.event[0].url} target="_blank"><BsFillInfoCircleFill /></a>
                         </p>
                         
                     // props.currQuestion.event.map((items) => {
