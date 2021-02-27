@@ -1,0 +1,12 @@
+.back{
+    /* background:radial-gradient(104.3% 124.15% at 112.78% 204.3%, #F9C9C2 0%, 
+    rgba(185, 43, 179, 0) 100%), 
+    radial-gradient(141.8% 141.8% at 25.28% 218.36%, #0C5EBF 0%, 
+    rgba(74, 60, 237, 0) 100%), #16171D; */
+    background-image: url('./bgnice.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
