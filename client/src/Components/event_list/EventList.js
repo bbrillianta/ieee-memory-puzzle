@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from 'react';
 
-import { BsFillCaretRightFill } from "react-icons/bs";
+import { BsXDiamondFill } from "react-icons/bs";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+
+
 
 import './EventList.css';
 
+<<<<<<< HEAD:client/src/Components/EventList.js
 const list = (props) =>{
    
     // return(<>
     //    <p><BsFillCaretRightFill />   {props.event} &nbsp; <a href={props.url}><BsFillInfoCircleFill /></a></p>
     // </>);
+=======
+const List = (props) =>{
+    return(<>
+       <p><BsXDiamondFill /> &nbsp;   {props.event} &nbsp; <a href={props.url}><BsFillInfoCircleFill /></a></p>
+    </>);
+>>>>>>> e5cee8fd3b5a9f6833a30b47092df3e6a6f88693:client/src/Components/event_list/EventList.js
 }
 
 const EventList = (props) =>{
     const [events, setEvents] = useState();
 
     return(<>
+    <div className="cont-event">
         <div className="event">
             { props.prevQuestion &&
                 <div>
@@ -35,6 +45,7 @@ const EventList = (props) =>{
                 </div>
             }
         </div>
+    </div>
     </>);
 }
 

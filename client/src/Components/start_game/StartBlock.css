@@ -1,26 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-.cont {
+.cont-start {
     padding-top: 30px;
     width: 61.25% !important;
     margin-left: 19.25%;
 }
 
-.game-board {
+.start-board {
     font-size: 24px;
     border-radius: 20px;
     background-color: #151B23;
     color: white;
+    background: #151B23;
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.13);
-}
-
-.question-board {
-    background-color: #283341;
-}
-
-.question-text {
-    font-family: Montserrat, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
+    border-radius: 20px;
 }
