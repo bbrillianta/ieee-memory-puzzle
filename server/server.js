@@ -17,8 +17,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const { Schema } = mongoose;
 const dateSchema = new Schema({
     date: String,
-    desc: String,
-    url: String
+    event: [{
+        desc: String,
+        url: String
+    }]
 });
 
 const Date = mongoose.model('Date', dateSchema, 'dates');
@@ -39,6 +41,12 @@ app.post('/store', async (req, res) => {
     const storedDoc = await doc.save();
 
     res.json({ success: true, storedDoc });
+});
+
+app.get('/dates', async(req, res) => {
+    const foundDocs = await Date.aggregate([{ $sample: { size: 20 } }]);
+
+    res.json({ success: true, foundDocs });
 });
 
 //Starting server
