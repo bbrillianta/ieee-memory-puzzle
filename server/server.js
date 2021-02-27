@@ -17,8 +17,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const { Schema } = mongoose;
 const dateSchema = new Schema({
     date: String,
-    desc: String,
-    url: String
+    event: [{
+        url: String,
+        desc: String
+    }]
 });
 
 const Date = mongoose.model('Date', dateSchema, 'dates');
@@ -29,12 +31,9 @@ app.get('/', (req, res) => {
 });
 
 app.post('/store', async (req, res) => {
-    const { date, desc, url } = req.body;
-    const doc = await new Date({
-        date,
-        desc,
-        url
-    });
+    const { date,event } = req.body;
+    const doc = new Date({date, event})
+    
 
     const storedDoc = await doc.save();
 
