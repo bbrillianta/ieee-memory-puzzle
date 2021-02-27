@@ -2,6 +2,7 @@
 
 .game-board {
     font-size: 24px;
+    border-radius: 20px;
     background-color: #151B23;
     color: white;
 }
