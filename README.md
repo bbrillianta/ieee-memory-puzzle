@@ -1,6 +1,6 @@
+<img src="./client/public/fav2.png" align="right" />
 # ieee-memory-puzzle
 
-<img src="./client/public/fav2.png" align="right" />
 ## Tecnology
 
 - MongoDB
