@@ -15,3 +15,7 @@ A random date will be given, and the player should decide whether they have seen
 - Node.js
 
 
+This is our project for iNTUition v7.0
+27-28 Feb 2021
+
+
