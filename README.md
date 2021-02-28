@@ -15,7 +15,7 @@ A random date will be given, and the player should decide whether they have seen
 - Node.js
 
 ## Install
-
+This project uses [node](http://nodejs.org) and [npm](https://npmjs.com).
 ```sh
 $ npm install
 ```
