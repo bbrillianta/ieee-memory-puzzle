@@ -20,11 +20,6 @@ This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). So you
 $ npm install
 ```
 
-Creat dotenv file and copy
-```sh
-MONGO_URL=mongodb+srv://bbrillianta:22Agustus2000bbv@cluster0.thxs8.mongodb.net/ieee_memory?retryWrites=true&w=majority
-```
-
 ## Usage
 Run in client and server
 ```sh
