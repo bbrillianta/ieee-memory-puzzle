@@ -17,6 +17,8 @@ A random date will be given, and the player should decide whether they have seen
 
 This is our project for iNTUition v7.0
 27-28 Feb 2021
-<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/404/749/datas/full_width.png" alt="iNTUition" width="500" height="100">
+<br>
+
+<img src="https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_photos/001/404/749/datas/full_width.png" alt="iNTUition" width="500" height="150">
 
 
