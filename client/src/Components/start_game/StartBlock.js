@@ -8,10 +8,10 @@ const StartBlock = () => {
     return (
         <div className="cont-start">
             <div className="start-board container">
-                <div className="row pt-5">
-                    <div className="col text-center question-text">NAMA GAME E OPO AJG</div>
+                <div className="row d-flex justify-content-center pt-3">
+                    <img className="log" src="./logorevisited.png"></img>
                 </div>
-                <div className="row pt-5 pb-5">
+                <div className="row pt-2 pb-5">
                     <div className="col-md-7 d-flex justify-content-end">
                     <Link to="/game"><Button name="START"/></Link>
                     </div>

@@ -15,3 +15,7 @@
     box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.13);
     border-radius: 20px;
 }
+
+.log {
+    width: 30%;
+}
