@@ -8,7 +8,7 @@ import EndBlock from '../Components/end_game/EndBlock';
 
 const Main = () =>{
     const fetchData = async () => {
-        const response = await fetch('http://localhost:3001/dates');
+        const response = await fetch('https://revisited.herokuapp.com/dates');
         const data = await response.json();
         await setQuestions(data.foundDocs);
     }
