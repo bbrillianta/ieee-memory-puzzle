@@ -8,6 +8,7 @@ https://www.youtube.com/watch?v=k5yxxXuUoVA
 
 ## Gameplay 
 https://revisited.netlify.app/
+
 A random date will be given, and the player should decide whether they have seen that date before or not. For each gameplay player have 3 Life/Hearts/Tries. If the life is depleted the game will be over.
 
 ## Technology
